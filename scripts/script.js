@@ -15,7 +15,7 @@ document.querySelectorAll(".quiz_btn").forEach((btn) => {
 
       setTimeout(() => {
         window.location.href = "https://championautoinsurance.com/#";
-      }, 2000);
+      }, 1000);
     }
   });
 });
