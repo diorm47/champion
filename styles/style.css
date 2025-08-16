@@ -120,6 +120,7 @@ header {
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  position: relative;
 }
 
 .quiz_btn {
@@ -146,7 +147,6 @@ header {
 }
 .active_quiz_btn {
   background: rgba(0, 104, 217, 1);
-
 }
 footer {
   background: rgba(51, 51, 51, 1);
@@ -235,8 +235,18 @@ footer {
   display: flex;
 }
 
-.quiz_result_loading img {
+.loading_anim {
   animation: spin 1s linear infinite;
+}
+
+.loading_block {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff1f;
 }
 
 @keyframes spin {
@@ -462,7 +472,8 @@ footer {
     letter-spacing: 0%;
     margin-bottom: 20px;
   }
-  header br, .quiz_result_loading br {
+  header br,
+  .quiz_result_loading br {
     display: block;
   }
 }
